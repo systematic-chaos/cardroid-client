@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="myTrips">
+        <item>@string/publishedTrips</item>
+        <item>@string/subscriptedTrips</item>
+    </string-array>
+    <string-array name="pickImageOptions">
+        <item>@string/gallery</item>
+        <item>@string/camera</item>
+    </string-array>
+    <string-array name="userActivityTypes">
+        <item>@string/singleUserJoinedTrip</item>
+        <item>@string/publishedTrip</item>
+        <item>@string/joinAccepted</item>
+        <item>@string/joinRejected</item>
+    </string-array>
+    <string-array name="fuelTypes">
+        <item>@string/noPb95</item>
+        <item>@string/noPb98</item>
+        <item>@string/dieselA</item>
+        <item>@string/dieselAPlus</item>
+        <item>@string/biodiesel</item>
+    </string-array>
+    <string-array name="timePrefs">
+        <item>@string/anytime</item>
+        <item>@string/morning</item>
+        <item>@string/afternoon</item>
+        <item>@string/night</item>
+    </string-array>
+
+    <array name="fuelPrices">
+        <item>@dimen/unleaded_95</item>
+        <item>@dimen/unleaded_98</item>
+        <item>@dimen/diesel_a</item>
+        <item>@dimen/diesel_a_plus</item>
+        <item>@dimen/biodiesel</item>
+    </array>
+
+</resources>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingTop="4dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/newtrip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/new_trip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@+id/textBasicInformation"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:background="@drawable/gradient_rectangle"
+                android:checked="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabToggle"
+                android:paddingLeft="6dip"
+                android:paddingRight="9dip"
+                android:text="@string/basicInformation"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:id="@+id/layoutBasicInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/from"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <fragment
+                    android:id="@+id/fromPlaceLocator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    class="uclm.esi.cardroid.util.PlaceLocator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/to"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <fragment
+                    android:id="@+id/toPlaceLocator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    class="uclm.esi.cardroid.util.PlaceLocator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/date"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/editTextDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left"
+                        android:layout_weight="3"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/imageButtonDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@android:drawable/ic_menu_today" />
+                </LinearLayout>
+
+                <fragment
+                    android:id="@+id/routeMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    class="uclm.esi.cardroid.util.RouteMap" />
+            </LinearLayout>
+
+            <CheckedTextView
+                android:id="@+id/textAdvancedInformation"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:background="@drawable/gradient_rectangle"
+                android:checked="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabToggle"
+                android:paddingLeft="6dip"
+                android:paddingRight="9dip"
+                android:text="@string/advancedInformation"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:id="@+id/layoutAdvancedInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                android:visibility="visible" >
+
+                <Switch
+                    android:id="@+id/switchTwoWayTrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/twoWayTrip" />
+
+                <Switch
+                    android:id="@+id/switchRegularTrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/regularTrip" />
+            </LinearLayout>
+
+            <CheckedTextView
+                android:id="@+id/textTripData"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:background="@drawable/gradient_rectangle"
+                android:checked="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabToggle"
+                android:paddingLeft="6dip"
+                android:paddingRight="9dip"
+                android:text="@string/tripData"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:id="@+id/layoutTripData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/availableSeats"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <NumberPicker
+                        android:id="@+id/numberPickerSeats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/tripCharacteristics"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/editTextComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonNewTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="newTrip"
+                android:text="@string/newtrip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

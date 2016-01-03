@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingTop="4dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/search"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/from"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <fragment
+                android:id="@+id/fromPlaceLocator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                class="uclm.esi.cardroid.util.PlaceLocator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/to"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <fragment
+                android:id="@+id/toPlaceLocator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                class="uclm.esi.cardroid.util.PlaceLocator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/date"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" >
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/imageButtonDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="showDateTimePickerDialog"
+                    android:src="@android:drawable/ic_menu_today" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/availableSeats"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <NumberPicker
+                    android:id="@+id/numberPickerSeats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3" />
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/routeMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="96"
+                class="uclm.esi.cardroid.util.RouteMap" />
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="searchTrips"
+                android:text="@string/search" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

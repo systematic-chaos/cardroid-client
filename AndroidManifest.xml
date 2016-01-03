@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uclm.esi.cardroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <!-- Camera features are available, though they are not required -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name="CardroidApp"
+        android:allowBackup="false"
+        android:icon="@drawable/car_logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/car_logo"
+        android:theme="@style/AppTheme"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/android_api_key" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <activity
+            android:name="uclm.esi.cardroid.RootMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.search.SearchActivity"
+            android:label="@string/search"
+            android:parentActivityName="uclm.esi.cardroid.RootMenuActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.RootMenuActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.search.SearchTripResultsActivity"
+            android:label="@string/search"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.mytrips.MyTripsActivity"
+            android:label="@string/mytrips"
+            android:parentActivityName="uclm.esi.cardroid.RootMenuActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.RootMenuActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.mytrips.TripDetailsActivity"
+            android:label="@string/tripData"
+            android:parentActivityName="uclm.esi.cardroid.mytrips.MyTripsActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.mytrips.MyTripsActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.mytrips.TripOfferDetailsActivity"
+            android:label="@string/tripData"
+            android:parentActivityName="uclm.esi.cardroid.mytrips.MyTripsActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.mytrips.MyTripsActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.mytrips.TripRequestDetailsActivity"
+            android:label="@string/tripData"
+            android:parentActivityName="uclm.esi.cardroid.mytrips.MyTripsActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.mytrips.MyTripsActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.newtrip.NewTripActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/newtrip"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.newtrip.NewTripOfferActivity"
+            android:label="@string/newtrip"
+            android:parentActivityName="uclm.esi.cardroid.RootMenuActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.RootMenuActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.newtrip.NewTripRequestActivity"
+            android:label="@string/requestTrip"
+            android:parentActivityName="uclm.esi.cardroid.RootMenuActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.RootMenuActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.newtrip.OrganizeTripActivity"
+            android:label="@string/organize"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.mymessages.MyMessagesActivity"
+            android:label="@string/messages"
+            android:parentActivityName="uclm.esi.cardroid.RootMenuActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.RootMenuActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.mymessages.MessageTalkActivity"
+            android:label="@string/messages"
+            android:parentActivityName="uclm.esi.cardroid.mymessages.MyMessagesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.mymessages.MyMessagesActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.myactivity.MyActivityActivity"
+            android:label="@string/activity"
+            android:parentActivityName="uclm.esi.cardroid.RootMenuActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.RootMenuActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.myprofile.MyProfileActivity"
+            android:label="@string/profile"
+            android:parentActivityName="uclm.esi.cardroid.RootMenuActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.RootMenuActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.myprofile.FriendProfileActivity"
+            android:label="@string/profile"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.myprofile.ProfileActivity"
+            android:label="@string/profile"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.myprofile.CarDetailsActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/car"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.login.RegisterActivity"
+            android:label="@string/register"
+            android:parentActivityName="uclm.esi.cardroid.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uclm.esi.cardroid.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name="uclm.esi.cardroid.login.LegalInfoActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/terms"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

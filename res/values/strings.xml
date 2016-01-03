@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="search">Buscar</string>
+    <string name="mytrips">Mis viajes</string>
+    <string name="newtrip">Publicar viaje</string>
+    <string name="messages">Mensajes</string>
+    <string name="activity">Mi actividad</string>
+    <string name="profile">Mi perfil</string>
+    <string name="menu">Menú principal</string>
+    <string name="app_name">Cardroid</string>
+    <string name="android_api_key">AIzaSyDz7U-x-G2JUsqHb6FItj6b3jqNo8VUj4o</string>
+    <string name="api_key">AIzaSyAn0klonz4xXXfha0LBD97jVgnpByHM07o</string>
+
+    <string name="from">Origen: </string>
+    <string name="to">Destino: </string>
+    <string name="stops">Puntos intermedios: </string>
+    <string name="date">Fecha: </string>
+    <string name="time">Hora: </string>
+    <string name="passengers">Participantes:</string>
+    <string name="driver">Conductor: </string>
+    <string name="requester">Solicitante: </string>
+    <string name="car">Coche: </string>
+    <string name="availableSeats">Plazas disponibles: </string>
+    <string name="requestedSeats">Plazas solicitadas: </string>
+    <string name="price">Precio: </string>
+    <string name="tripCharacteristics">Características del viaje: </string>
+    <string name="join"><b>¡Unirse al viaje!</b></string>
+    <string name="organize">¡Organizar el viaje!</string>
+    <string name="basicInformation">Información básica</string>
+    <string name="advancedInformation">Información avanzada</string>
+    <string name="contactData">Datos de contacto</string>
+    <string name="carsList">Coches</string>
+    <string name="tripData">Datos del viaje</string>
+    <string name="offerTrip">Ofertar viaje</string>
+    <string name="requestTrip">Solicitar viaje</string>
+    <string name="name">Nombre: </string>
+    <string name="surname">Apellidos: </string>
+    <string name="reputation">Reputación: </string>
+    <string name="home">Ciudad: </string>
+    <string name="phone">Teléfono: </string>
+    <string name="eMail">e-mail: </string>
+    <string name="brand">Marca: </string>
+    <string name="model">Modelo: </string>
+    <string name="color">Color: </string>
+    <string name="seats">Asientos: </string>
+    <string name="plate">Matrícula: </string>
+    <string name="fuel">Combustible: </string>
+    <string name="allowDateTolerance">Permitir tolerancia en la fecha: </string>
+    <string name="toleranceDays">Tolerancia días </string>
+    <string name="consumption">Consumo (l/Km): </string>
+    
+    <string name="twoWayTrip">Viaje de ida y vuelta</string>
+    <string name="regularTrip">Viaje periódico</string>
+    <string name="returnDate">Fecha de vuelta: </string>
+    <string name="everyWeek">Todas las semanas</string>
+    <string name="evenWeeks">Semanas pares</string>
+    <string name="oddWeeks">Semanas impares</string>
+    <string name="monday">L</string>
+    <string name="tuesday">M</string>
+    <string name="wednesday">X</string>
+    <string name="thursday">J</string>
+    <string name="friday">V</string>
+    <string name="saturday">S</string>
+    <string name="sunday">D</string>
+    <string name="allow">Permitir: </string>
+    <string name="luggage">Equipaje</string>
+    <string name="smoke">Fumar</string>
+    <string name="pets">Animales</string>
+    <string name="food">Comida</string>
+    
+    <string name="noTripsFound">No se han encontrado resultados de viajes.</string>
+    <string name="noPlacesFound">No se han encontrado lugares recientes</string>
+    <string name="noMessagesFound">No tienes mensajes.\n\nPuedes enviar mensajes a otros usuarios para contactar con ellos.</string>
+    <string name="noActivityFound">Aún no has hecho nada&#8230;\n\nNavega desde el menú principal para descubrir las posibilidades que te ofrece la aplicación.</string>
+    <string name="noTripsPublished">No has organizado ningún viaje.\n\nPuedes publicar tus propios viajes para que otros usuarios puedan unirse a ellos.\n\n¡Es una forma genial de conocer gente y ahorrar dinero!</string>
+    <string name="noTripsSubscripted">No te has unido a ningún viaje.\n\nPuedes unirte a los recorridos de otros usuarios y compartir coche con ellos.\n\n¡Es una forma genial de conocer gente y ahorrar dinero!</string>
+    <string name="noCarsFound">No has añadido ningún coche a tu perfil.\n\nAl añadir tu coche, puedes publicar viajes a los que otros usuarios pueden apuntarse, y así ahorrar dinero en tus desplazamientos.</string>
+    <string name="routeFound">Ruta calculada</string>
+    <string name="noRouteFound">No se ha encontrado una ruta válida</string>
+    <string name="geolocationServicesDisabled">Los servicios de geolocalización están desactivados</string>
+    <string name="fillingError">Uno o varios de los campos no ha sido rellenado correctamente</string>
+    
+    <string name="editUserData">Editar usuario</string>
+    <string name="editCarData">Editar coche</string>
+    <string name="addCar">Añadir coche</string>
+    <string name="pickImage">Seleccionar imagen</string>
+    <string name="image">Thumbnail</string>
+    <string name="sendMessage">Enviar mensaje</string>
+    
+    <string name="newTripSuccess">Viaje creado</string>
+    <string name="newTripFailure">Error en la creación del viaje</string>
+    <string name="tripAvailabilityFailure">Error recuperando el estado de disponibilidad del viaje</string>
+    <string name="tripJoinSuccess"><b>¡Bienvenido a bordo!</b></string>
+    <string name="tripJoinFailure">Error uniéndose al viaje</string>
+    <string name="dataUpdated">Datos actualizados</string>
+    <string name="updateError">Error actualizando datos</string>
+    <string name="retrievalError">Error recuperando datos</string>
+    <string name="notification">Notificación push de Cardroid</string>
+    <string name="message">Mensaje entrante de Cardroid</string>
+    <string name="loginAgain">La sesión ha caducado. Por favor, identifíquese de nuevo.</string>
+    <string name="connected">Conectado</string>
+    <string name="disconnected">Desconectado</string>
+    
+    <string name="loginActivityTitle">Cardroid Login</string>
+    <string name="register"><b>¡Unirse a Cardroid!</b></string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="signIn"><b>¡Iniciar sesión!</b></string>
+    <string name="terms">Términos y condiciones</string>
+    <string name="agreeTerms">Declaro que he leído y acepto los &lt;u>terminos y condiciones de uso&lt;/u></string>
+    <string name="lopd1">En cumplimiento de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácer Personal (LOPD), Francisco Javier Fernández-Bravo Peñuela, como responsable del fichero informa de las siguientes consideraciones:</string>
+    <string name="lopd2">Los datos de carácter personal que le solicitamos quedarán incorporados a un fichero cuya finalidad es permitir a los usuarios de CarDroid ponerse en contacto entre sí y frente a la administración de la aplicación. Los campos solicitados son de cumplimentación obligatoria, siendo imposible realizar la finalidad expresada si no aporta estos datos.</string>
+    <string name="lopd3">Queda igualmente informado de la posibilidad de ejercitar los derechos de acceso, rectifiacción, cancelación y oposición, de sus datos personales en fcojavier.fernandezbravo@alu.uclm.es .</string>
+    
+    <string name="hostAddress">cardroid.duckdns.org</string>
+    <string name="registrationPort">6535</string>
+    <string name="loginPortNonSecure">4064</string>
+    <string name="loginPortSecure">4063</string>
+    
+    <string name="publishedTrips">Viajes publicados</string>
+    <string name="subscriptedTrips">Viajes suscritos</string>
+    <string name="gallery">Galería</string>
+    <string name="camera">Cámara</string>
+    <string name="singleUserJoinedTrip">  se ha apuntado a tu viaje </string>
+    <string name="multipleUsersJoinedTrip"> se han apuntado a tu viaje </string>
+    <string name="publishedTrip"> ha publicado un viaje en respuesta a tu petición </string>
+    <string name="joinAccepted"> ha aceptado tu incorporación a su viaje </string>
+    <string name="joinRejected"> ha rechazado tu incorporación a su viaje </string>
+	<string name="noPb95">Sin plomo 95</string>
+	<string name="noPb98">Sin plomo 98</string>
+	<string name="dieselA">Diesel A</string>
+	<string name="dieselAPlus">Diesel A+</string>
+	<string name="biodiesel">Biodiesel</string>
+	<string name="anytime">Cualquiera</string>
+	<string name="morning">Mañana</string>
+	<string name="afternoon">Tarde</string>
+	<string name="night">Noche</string>
+
+</resources>

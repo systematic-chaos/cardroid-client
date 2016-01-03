@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weekdays_layout"
+    style="@android:style/Holo.ButtonBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal" >
+
+    <uclm.esi.cardroid.util.CheckableButton
+        android:id="@+id/buttonMonday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkable_selector"
+        android:text="@string/monday" />
+
+    <uclm.esi.cardroid.util.CheckableButton
+        android:id="@+id/buttonTuesday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkable_selector"
+        android:text="@string/tuesday" />
+
+    <uclm.esi.cardroid.util.CheckableButton
+        android:id="@+id/buttonWednesday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkable_selector"
+        android:text="@string/wednesday" />
+
+    <uclm.esi.cardroid.util.CheckableButton
+        android:id="@+id/buttonThursday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkable_selector"
+        android:text="@string/thursday" />
+
+    <uclm.esi.cardroid.util.CheckableButton
+        android:id="@+id/buttonFriday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkable_selector"
+        android:text="@string/friday" />
+
+    <uclm.esi.cardroid.util.CheckableButton
+        android:id="@+id/buttonSaturday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkable_selector"
+        android:text="@string/saturday" />
+
+    <uclm.esi.cardroid.util.CheckableButton
+        android:id="@+id/buttonSunday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkable_selector"
+        android:text="@string/sunday" />
+
+</LinearLayout>

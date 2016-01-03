@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="unleaded_95" type="dimen" format="float">1.399</item>
+    <item name="unleaded_98" type="dimen" format="float">1.515</item>
+    <item name="diesel_a" type="dimen" format="float">1.353</item>
+    <item name="diesel_a_plus" type="dimen" format="float">1.414</item>
+    <item name="biodiesel" type="dimen" format="float">1.301</item>
+</resources>

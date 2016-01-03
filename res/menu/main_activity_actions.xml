@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="uclm.esi.cardroid" >
+
+    <item
+        android:id="@+id/menu_rootmenu"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:showAsAction="always"
+        android:title="@string/app_name"/>
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="always"
+        android:title="@string/search"/>
+    <item
+        android:id="@+id/menu_mytrips"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:showAsAction="always"
+        android:title="@string/mytrips"/>
+    <item
+        android:id="@+id/menu_newtrip"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always"
+        android:title="@string/newtrip"/>
+    <item
+        android:id="@+id/menu_messages"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:showAsAction="always"
+        android:title="@string/messages"/>
+    <item
+        android:id="@+id/menu_activity"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:showAsAction="always"
+        android:title="@string/activity"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:showAsAction="always"
+        android:title="@string/profile"/>
+
+</menu>

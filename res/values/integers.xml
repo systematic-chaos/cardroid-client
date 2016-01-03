@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="completion_threshold" format="integer" type="integer">4</item>
+    <item name="autocomplete_delay" format="integer" type="integer">1000</item>
+    <item name="radius" format="integer" type="integer">50</item>
+    <item name="seats_min" format="integer" type="integer">1</item>
+    <item name="seats_max" format="integer" type="integer">8</item>
+    <item name="reputation_stars" format="integer" type="integer">5</item>
+    <item name="google_play_services_version" format="integer" type="integer">5089000</item>
+
+</resources>

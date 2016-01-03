@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sample="http://schemas.android.com/apk/res/uclm.esi.cardroid">
+
+    <item android:drawable="@drawable/checkable_button_state_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/checkable_button_state_pressed" sample:is_checked="true"/>
+    <item android:drawable="@drawable/checkable_button_state_checked" android:state_pressed="false"/>
+    <item android:drawable="@android:color/transparent" sample:is_checked="false"/>
+
+</selector>

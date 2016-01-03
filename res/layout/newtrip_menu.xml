@@ -1,0 +1,38 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/buttonOfferNewTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkable_button_state_pressed"
+            android:onClick="newTripOffer"
+            android:text="@string/newtrip" />
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="top|center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="40dp" >
+
+        <Button
+            android:id="@+id/buttonRequestNewTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkable_button_state_pressed"
+            android:onClick="newTripRequest"
+            android:text="@string/requestTrip" />
+    </TableRow>
+
+</TableLayout>
